@@ -1,0 +1,75 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: Enable debugging
+        required: false
+        default: false
+
+  push:
+    branches: ['main', "feature/*"]
+  pull_request:
+    branches: ['main', "feature/*"]
+
+  # schedule: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
+  #   - cron: '5 4 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      # ─────────────────────────────────────────────────────
+      - uses: actions/checkout@v3
+      # ─────────────────────────────────────────────────────
+      - name: Set env variables
+        run: |
+          echo "ACTIONS_CACHE_DIR=$(echo ~/.actions-cache)" >> $GITHUB_ENV
+          echo "TERM=xterm" >> $GITHUB_ENV
+          echo "PNPM_STORE_DIR=$(echo ~/.actions-cache/pnpm-store)" >> $GITHUB_ENV
+          echo "WEEK=$(echo $(date +'%U'))" >> $GITHUB_ENV
+          echo "$(echo ~/.actions-cache/bin)" >> $GITHUB_PATH
+
+      # ─────────────────────────────────────────────────────
+      - name: Test binaries
+        run: |
+          ./dasel --version || true
+          ./hr
+          ./dprint --version || true
+          ./hr
+          ./fd --version || true
+          ./hr
+          ./htmlq --version || true
+          ./hr
+          ./iprange --version || true
+          ./hr
+          ./jq --version || true
+          ./hr
+          ./pup --version || true
+          ./hr
+          ./rg --version || true
+          ./hr
+          ./sd --version || true
+          ./hr
+          ./sponge -h || true
+          ./hr
+          ./task --version || true
+          ./hr
+
+      # ─────────────────────────────────────────────────────
+      # Only commit if we're in main branch
+      - name: Commit to repository
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add . --verbose
+          stats=$(git diff --cached --shortstat | sed -E 's/ (insertions|deletions)//g')
+          git commit -m "⚡️ CI: $stats [skip ci]" -a || true
+          git push
+
