@@ -60,6 +60,7 @@ jobs:
           ./hr
           ./task --version || true
           ./hr
+          ./gron --version || true
 
       # ─────────────────────────────────────────────────────
       # Only commit if we're in main branch
