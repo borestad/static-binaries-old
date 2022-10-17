@@ -61,6 +61,8 @@ jobs:
           ./task --version || true
           ./hr
           ./gron --version || true
+          ./hr
+          ./tokei --version || true
 
       # ─────────────────────────────────────────────────────
       # Only commit if we're in main branch
