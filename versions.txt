@@ -1,0 +1,41 @@
+./tokei: ELF 32-bit LSB pie executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=9265154de767486b5a486d722d8d973d1d82dd7a, with debug_info, not stripped
+tokei 12.1.2 compiled with serialization support: json, cbor, yaml
+
+./sponge: Python script, Unicode text, UTF-8 text executable
+
+./pup: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+0.4.0
+
+./fd: ELF 32-bit LSB executable, Intel 80386, version 1 (GNU/Linux), statically linked, no section header
+fd 8.4.0
+
+./dasel: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+dasel version v1.27.1
+
+./task: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+Task version: v3.17.0 (h1:tDkE4X8VUUSNzFMTQNuEEhR/3cfI9hILLuwm365sNCM=)
+
+./rg: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+
+./hr: Bourne-Again shell script, Unicode text, UTF-8 text executable
+[3238m--version--version--version--version--version--version--version--version--versio(B[m
+
+./bc: ELF 32-bit LSB executable, Intel 80386, version 1 (GNU/Linux), statically linked, no section header
+bc 1.06.95
+
+./sd: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+sd 0.7.6
+
+./jq: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, no section header
+jq-1.6
+
+./dprint: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+dprint 0.32.1
+
+./htmlq: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+
+./iprange: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+
+./gron: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+gron version dev
+

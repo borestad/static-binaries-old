@@ -38,31 +38,10 @@ jobs:
       # ─────────────────────────────────────────────────────
       - name: Test binaries
         run: |
-          ./dasel --version || true
-          ./hr
-          ./dprint --version || true
-          ./hr
-          ./fd --version || true
-          ./hr
-          ./htmlq --version || true
-          ./hr
-          ./iprange --version || true
-          ./hr
-          ./jq --version || true
-          ./hr
-          ./pup --version || true
-          ./hr
-          ./rg --version || true
-          ./hr
-          ./sd --version || true
-          ./hr
-          ./sponge -h || true
-          ./hr
-          ./task --version || true
-          ./hr
-          ./gron --version || true
-          ./hr
-          ./tokei --version || true
+          find . -mindepth 1 -maxdepth 1 -type f -executable -print0 | \
+          sort -z | \
+          xargs -0 -I {} sh -c "file {}; {} --version 2>&1 | head -n 1 || true; echo " | \
+          tee versions.txt
 
       # ─────────────────────────────────────────────────────
       # Only commit if we're in main branch
