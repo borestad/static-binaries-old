@@ -1,6 +1,9 @@
 ./bc: ELF 32-bit LSB executable, Intel 80386, version 1 (GNU/Linux), statically linked, no section header
 bc 1.06.95
 
+./crawley: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+Crawley v1.5.1-bdb91cd build at: 2022-10-12T23:31:06Z with go1.19.2 site: https://github.com/s0rg/crawley
+
 ./dasel: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 dasel version v1.27.1
 
