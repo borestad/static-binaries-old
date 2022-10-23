@@ -20,6 +20,7 @@ gron version dev
 [3238m--version--version--version--version--version--version--version--version--versio(B[m
 
 ./htmlq: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+htmlq 0.4.0
 
 ./iprange: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 
