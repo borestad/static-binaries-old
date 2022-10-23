@@ -29,7 +29,8 @@ jq-1.6
 ./pup: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 0.4.0
 
-./rg: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+./rg: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+ripgrep 13.0.0 (rev af6b6c543b)
 
 ./sd: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 sd 0.7.6
