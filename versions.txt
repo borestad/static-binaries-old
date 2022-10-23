@@ -23,6 +23,7 @@ gron version dev
 htmlq 0.4.0
 
 ./iprange: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+iprange 1.0.4
 
 ./jq: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, no section header
 jq-1.6
