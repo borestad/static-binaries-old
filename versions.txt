@@ -1,6 +1,9 @@
 ./bc: ELF 32-bit LSB executable, Intel 80386, version 1 (GNU/Linux), statically linked, no section header
 bc 1.06.95
 
+./bsdtar: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.12 liblzma/5.2.5
+
 ./crawley: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 Crawley v1.5.1-bdb91cd build at: 2022-10-12T23:31:06Z with go1.19.2 site: https://github.com/s0rg/crawley
 
@@ -27,6 +30,9 @@ iprange 1.0.4
 
 ./jq: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, no section header
 jq-1.6
+
+./pget: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+unknown flag `version'
 
 ./pup: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 0.4.0
