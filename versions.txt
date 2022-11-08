@@ -31,6 +31,9 @@ iprange 1.0.4
 ./jq: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, no section header
 jq-1.6
 
+./just: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+just 1.8.0
+
 ./pget: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 unknown flag `version'
 
