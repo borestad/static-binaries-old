@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+eget -a gdu_linux_amd64.tgz --to=gdu dundee/gdu &
+eget -a jq-linux64 --to=jq stedolan/jq &
+eget -a dasel_linux_amd64 --to=dasel TomWright/dasel &
+eget -a dprint-x86_64-unknown-linux-gnu --to=dprint dprint/dprint &
+eget -a x86_64-unknown-linux-gnu --to=fd sharkdp/fd &
+eget -a linux-amd64 --to=gron tomnomnom/gron &
+eget -a x86_64-linux --to=htmlq mgdm/htmlq &
+eget -a linux_amd64 --to=pup ericchiang/pup &
+eget -a x86_64 -a linux --to=rg BurntSushi/ripgrep &
+eget -a x86_64-unknown-linux-gnu --to=sd chmln/sd &
+eget -a task_linux_amd64.tar.gz --to=task go-task/task &
+eget -a x86_64-unknown-linux-gnu --to=tokei XAMPPRocky/tokei &
+eget -a linux_x86_64 --to=crawley s0rg/crawley &
+eget -a x86_64-unknown-linux-gnu --to=bkt dimo414/bkt &
+eget -a x86_64-unknown-linux-musl --to=just casey/just &
+eget -a x86_64-unknown-linux --to=checkexec kurtbuilds/checkexec &
+
+
+eget https://raw.githubusercontent.com/Chaostheorie/sponge/main/sponge &
+eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_64/busybox &
+eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_64/curl &
+eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_64/pv &
+eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_64/rsync &
+eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_64/xml &
+eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_64/xmllint &
+
+wait
+
+fd . -tx -tf -x upx
