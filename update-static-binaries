@@ -16,7 +16,11 @@ eget -a linux_x86_64 --to=crawley s0rg/crawley &
 eget -a x86_64-unknown-linux-gnu --to=bkt dimo414/bkt &
 eget -a x86_64-unknown-linux-musl --to=just casey/just &
 eget -a x86_64-unknown-linux --to=checkexec kurtbuilds/checkexec &
-
+eget -a x86_64-unknown-linux-gnu --to=bat sharkdp/bat &
+eget -a linux-amd64 --to=ctop bcicen/ctop &
+eget -a exa-linux-x86_64-v --to=exa ogham/exa &
+eget -a linux -a 4.14 bcpierce00/unison &
+eget -a 'x86_64-unknown-linux-gnu.tar.xz' -a '^sha' -a '^b3' --to=watchexec watchexec/watchexec &
 
 eget https://raw.githubusercontent.com/Chaostheorie/sponge/main/sponge &
 eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_64/busybox &
@@ -28,4 +32,4 @@ eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_
 
 wait
 
-fd . -tx -tf -x upx
+fd . -tx -tf --exclude 'watchexec' -x upx
