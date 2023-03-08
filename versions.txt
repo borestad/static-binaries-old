@@ -1,3 +1,6 @@
+./bat: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=10892d68889b75aa3f10808b8a8b13ebe4f16336, stripped
+bat 0.22.1 (e5d9579)
+
 ./bc: ELF 32-bit LSB executable, Intel 80386, version 1 (GNU/Linux), statically linked, no section header
 bc 1.06.95
 
@@ -16,6 +19,9 @@ checkexec 0.2.0
 ./crawley: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 Crawley v1.5.10-7f708cf build at: 2023-03-06T12:05:38Z with go1.20.1 site: https://github.com/s0rg/crawley
 
+./ctop: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+flag provided but not defined: -version
+
 ./curl: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 curl 7.88.1 (x86_64-pc-linux-musl) libcurl/7.88.1 mbedTLS/2.28.2 zlib/1.2.13 libssh2/1.10.0 nghttp2/1.52.0
 
@@ -24,6 +30,9 @@ dasel version development
 
 ./dprint: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 dprint 0.34.5
+
+./exa: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=3c485f27e53455592ea20a84ca52fd6f8393c8ce, stripped
+exa - list files on the command-line
 
 ./fd: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=640eeb1bbb3f6b99a359d06ed8ca0bab179bfa6c, stripped
 fd 8.7.0
@@ -70,7 +79,7 @@ sd 0.7.6
 ./sponge: Python script, Unicode text, UTF-8 text executable
 
 ./static-get: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, no section header
-upxCQI2NC2ABZD 2020.02.11-00:21
+upxBA4NDFXABZH 2020.02.11-00:21
 
 ./task: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 Task version: v3.21.0 (h1:pVGAGXxJ9Pk5mvjqv/CsdAD4ZIzNMjF+vrXMueM/WFk=)
@@ -78,8 +87,14 @@ Task version: v3.21.0 (h1:pVGAGXxJ9Pk5mvjqv/CsdAD4ZIzNMjF+vrXMueM/WFk=)
 ./tokei: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=e81b9d201f74d4d4ccbdf3886cacdf93844c38ee, with debug_info, not stripped
 tokei 12.1.2 compiled with serialization support: json, cbor, yaml
 
+./unison: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+Usage: unison [options]
+
 ./update-static-binaries: Bourne-Again shell script, ASCII text executable
 ./update-static-binaries: line 3: eget: command not found
+
+./watchexec: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=a4fb066d2250aba6797005bdba57a441c5dc1436, for GNU/Linux 3.2.0, stripped
+watchexec 1.21.1
 
 ./xml: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 1.6.1
