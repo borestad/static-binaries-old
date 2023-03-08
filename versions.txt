@@ -14,7 +14,7 @@ bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.12 liblzma/5.2.5
 checkexec 0.2.0
 
 ./crawley: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
-Crawley v1.5.9-e2ef2e0 build at: 2023-02-15T21:50:59Z with go1.20 site: https://github.com/s0rg/crawley
+Crawley v1.5.10-7f708cf build at: 2023-03-06T12:05:38Z with go1.20.1 site: https://github.com/s0rg/crawley
 
 ./curl: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 curl 7.88.1 (x86_64-pc-linux-musl) libcurl/7.88.1 mbedTLS/2.28.2 zlib/1.2.13 libssh2/1.10.0 nghttp2/1.52.0
@@ -70,7 +70,7 @@ sd 0.7.6
 ./sponge: Python script, Unicode text, UTF-8 text executable
 
 ./static-get: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, no section header
-upxC0NMRGQABXA 2020.02.11-00:21
+upxCQI2NC2ABZD 2020.02.11-00:21
 
 ./task: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 Task version: v3.21.0 (h1:pVGAGXxJ9Pk5mvjqv/CsdAD4ZIzNMjF+vrXMueM/WFk=)
@@ -79,7 +79,7 @@ Task version: v3.21.0 (h1:pVGAGXxJ9Pk5mvjqv/CsdAD4ZIzNMjF+vrXMueM/WFk=)
 tokei 12.1.2 compiled with serialization support: json, cbor, yaml
 
 ./update-static-binaries: Bourne-Again shell script, ASCII text executable
-./update-static-binaries: line 4: eget: command not found
+./update-static-binaries: line 3: eget: command not found
 
 ./xml: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 1.6.1
