@@ -20,8 +20,10 @@ eget -a x86_64-unknown-linux-gnu --to=bat sharkdp/bat &
 eget -a linux-amd64 --to=ctop bcicen/ctop &
 eget -a exa-linux-x86_64-v --to=exa ogham/exa &
 eget -a linux -a 4.14 bcpierce00/unison &
-eget -a 'x86_64-unknown-linux-gnu.tar.xz' -a '^sha' -a '^b3' --to=watchexec watchexec/watchexec &
+eget -a 'x86_64-unknown-linux-musl.tar.xz' -a '^sha' -a '^b3' --to=watchexec watchexec/watchexec &
 eget -a 'amd64_linux' --to=upx upx/upx &
+eget -a 'Linux_x86_64' --to=lazydocker jesseduffield/lazydocker &
+eget -a 'linux-amd64' --to=dry moncho/dry &
 
 eget https://raw.githubusercontent.com/Chaostheorie/sponge/main/sponge &
 eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_64/busybox &
@@ -33,4 +35,4 @@ eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_
 
 wait
 
-fd . -tx -tf --exclude 'watchexec|upx' -x upx
+fd . -tx -tf --exclude 'watchexec|upx' -x upx --best
