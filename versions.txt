@@ -79,7 +79,7 @@ sd 0.7.6
 ./sponge: Python script, Unicode text, UTF-8 text executable
 
 ./static-get: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, no section header
-upxCHZ2HOOABXV 2020.02.11-00:21
+upxDNG0WQVAB1P 2020.02.11-00:21
 
 ./task: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 Task version: v3.21.0 (h1:pVGAGXxJ9Pk5mvjqv/CsdAD4ZIzNMjF+vrXMueM/WFk=)
@@ -91,7 +91,7 @@ tokei 12.1.2 compiled with serialization support: json, cbor, yaml
 Usage: unison [options]
 
 ./update-static-binaries: Bourne-Again shell script, ASCII text executable
-./update-static-binaries: line 4: eget: command not found
+./update-static-binaries: line 3: eget: command not found
 
 ./upx: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 upx 4.0.2
