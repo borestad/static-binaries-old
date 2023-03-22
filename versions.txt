@@ -45,7 +45,7 @@ Dust 0.8.5
 ./entr: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped
 ./entr: unrecognized option: -
 
-./exa: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+./exa: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 exa - list files on the command-line
 
 ./fd: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
