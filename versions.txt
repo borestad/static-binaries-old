@@ -1,4 +1,4 @@
-./bat: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=10892d68889b75aa3f10808b8a8b13ebe4f16336, stripped
+./bat: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 bat 0.22.1 (e5d9579)
 
 ./bc: ELF 32-bit LSB executable, Intel 80386, version 1 (GNU/Linux), statically linked, no section header
@@ -16,8 +16,11 @@ bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.12 liblzma/5.2.5
 ./checkexec: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 checkexec 0.2.0
 
+./compress-static-binaries: Bourne-Again shell script, ASCII text executable
+./compress-static-binaries: line 7: cd: .tmp: No such file or directory
+
 ./crawley: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
-Crawley v1.5.10-7f708cf build at: 2023-03-06T12:05:38Z with go1.20.1 site: https://github.com/s0rg/crawley
+Crawley v1.5.11-bccddf0 build at: 2023-03-19T13:28:43Z with go1.20.2 site: https://github.com/s0rg/crawley
 
 ./ctop: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 flag provided but not defined: -version
@@ -25,19 +28,33 @@ flag provided but not defined: -version
 ./curl: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 curl 7.88.1 (x86_64-pc-linux-musl) libcurl/7.88.1 mbedTLS/2.28.2 zlib/1.2.13 libssh2/1.10.0 nghttp2/1.52.0
 
+./curlie: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+curl 7.81.0 (x86_64-pc-linux-gnu) libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.13
+
 ./dasel: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 dasel version development
 
 ./dprint: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
-dprint 0.34.5
+dprint 0.35.3
 
-./exa: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=3c485f27e53455592ea20a84ca52fd6f8393c8ce, stripped
+./dry: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+dry version 0.11.1, build 175dde05
+./dust: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+Dust 0.8.5
+
+./entr: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped
+./entr: unrecognized option: -
+
+./exa: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 exa - list files on the command-line
 
-./fd: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=640eeb1bbb3f6b99a359d06ed8ca0bab179bfa6c, stripped
+./fd: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 fd 8.7.0
 
-./gdu: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, Go BuildID=tPvaoD774MTRKUU-rtuK/lqjcglNW95KGAYGBXIiM/5Vmkix_A9cenWsWX3S0j/woKF8LSKSwwkK8scnlgV, stripped
+./fzf: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+0.38.0 (352ea07)
+
+./gdu: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 Version:	 v5.22.0
 
 ./gron: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
@@ -52,14 +69,32 @@ htmlq 0.4.0
 ./iprange: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 iprange 1.0.4
 
+./jo: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+./jo: unrecognized option: -
+
 ./jq: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, no section header
 jq-1.6
 
 ./just: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 just 1.13.0
 
+./lazydocker: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+Version: 0.20.0
+
+./micro: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+Version: 2.0.11
+
+./nnn: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, no section header
+./nnn: invalid option -- '-'
+
+./ouch: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+ouch 0.4.1
+
 ./pget: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 unknown flag `version'
+
+./procs: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+procs "0.14.0 ( rev: 915d891, rustc: 1.67.1, build at: 2023/03/07 09:05:53 )"
 
 ./pup: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 0.4.0
@@ -78,30 +113,39 @@ sd 0.7.6
 
 ./sponge: Python script, Unicode text, UTF-8 text executable
 
-./static-get: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), statically linked, no section header
-upxDNG0WQVAB1P 2020.02.11-00:21
+./starship: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), static-pie linked, stripped
+starship 1.13.1
+
+./static-get: POSIX shell script, ASCII text executable
+static-get 2020.02.11-00:21
 
 ./task: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
-Task version: v3.21.0 (h1:pVGAGXxJ9Pk5mvjqv/CsdAD4ZIzNMjF+vrXMueM/WFk=)
+Task version: v3.22.0 (h1:sW+qi054ReRpX7nG8DcKYq3e4IzfSq366RcqEq2lDxc=)
 
-./tokei: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=e81b9d201f74d4d4ccbdf3886cacdf93844c38ee, with debug_info, not stripped
+./tokei: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 tokei 12.1.2 compiled with serialization support: json, cbor, yaml
 
-./unison: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+./unison: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 Usage: unison [options]
 
 ./update-static-binaries: Bourne-Again shell script, ASCII text executable
-./update-static-binaries: line 3: eget: command not found
+ROOT: /home/runner/work/static-binaries/static-binaries
 
-./upx: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+./upx: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped
 upx 4.0.2
 
-./watchexec: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
-watchexec 1.21.1
+./watchexec: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), static-pie linked, stripped
+watchexec 1.22.2 (e8391cd 2023-03-22) 
 
 ./xml: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 1.6.1
 
 ./xmllint: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 ./xmllint: using libxml version 20910
+
+./zellij: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), static-pie linked, stripped
+zellij 0.35.2
+
+./zoxide: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
+zoxide v0.9.0
 
