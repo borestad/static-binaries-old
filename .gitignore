@@ -2,3 +2,5 @@
 *.upx
 *.0*
 --version
+.tmp
+.tmp/*

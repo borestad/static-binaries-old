@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+cd "$(dirname $0)"
+ROOT=$(pwd)
+
+
+cd .tmp || exit "No .tmp folder exists"
+rm -rf .upx
+
+echo "1. Find all executable ELF files & create SHASUM"
+find . -maxdepth 1 -type f -executable | xargs file | grep ELF | sort | cut -d ':' -f1 | xargs sha256sum >| $ROOT/SHASUM
+
+echo '2. Copy all files that have changed to .upx/*'
+mkdir -p .upx
+git diff -U0 $ROOT/SHASUM | egrep -oh '\./.*' | sd './' ' ' | sort | uniq | xargs -I '{}' bash -c "cp -v "./{}" .upx/"
+
+echo '3. Compress files'
+cd .upx
+fd -tx . | egrep -v 'watchexec|upx|zellij|starship|entr' | xargs -P2 upx --best
+
+# echo '4. Copy back files'
+fd . -tx -x bash -c "cp -v {} ../../"
+
+
+
+# Exclude some files that should never be compressed
+# cat $ROOT/SHASUM | egrep -v 'watchexec|upx|gdu|zellij|starship|entr' >| /tmp/SHASUM.tmp
+
+# sha256sum --check /tmp/SHASUM.tmp 2> /dev/null | grep 'OK' | cut -d ':' -f1 | xargs git checkout
+
+# # UPX only changed files
+# #sha256sum --check /tmp/SHASUM.tmp --quiet 2> /dev/null | cut -d ':' -f 1 | xargs -I '{}' bash -c 'upx --best "{}"'
+
+

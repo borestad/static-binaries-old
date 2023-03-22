@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 
+cd "$(dirname $0)"
+ROOT=$(pwd)
+echo "ROOT: $ROOT"
+
+rm -rf .tmp && mkdir .tmp && cd .tmp
+
 eget -a 'amd64_linux' --to=upx upx/upx
 eget -a 'linux_amd64.tar.gz' --to=curlie rs/curlie
-eget -a 'linux_amd64' --to=procs junegunn/fzf
+eget -a 'linux_amd64' --to=fzf junegunn/fzf
 eget -a 'Linux_x86_64' --to=lazydocker jesseduffield/lazydocker
 eget -a 'linux-amd64' --to=dry moncho/dry
 eget -a 'linux64-static' --to micro zyedidia/micro
@@ -17,9 +23,9 @@ eget -a 'x86_64-unknown-linux-musl' --to=zoxide ajeetdsouza/zoxide
 eget -a dasel_linux_amd64 --to=dasel TomWright/dasel
 eget -a dprint-x86_64-unknown-linux-gnu --to=dprint dprint/dprint
 eget -a exa-linux-x86_64-v --to=exa ogham/exa
-eget -a gdu_linux_amd64.tgz --to=gdu dundee/gdu
+eget -a gdu_linux_amd64_static.tgz --to=gdu dundee/gdu
 eget -a jq-linux64 --to=jq stedolan/jq
-eget -a linux -a 4.14 bcpierce00/unison
+eget -a "linux.static" --to=unison bcpierce00/unison
 eget -a linux_amd64 --to=pup ericchiang/pup
 eget -a linux_x86_64 --to=crawley s0rg/crawley
 eget -a linux-amd64 --to=ctop bcicen/ctop
@@ -47,11 +53,18 @@ eget https://raw.githubusercontent.com/ryanwoodsmall/static-binaries/master/x86_
 
 wait
 
-# Find all executable ELF files
-find . -maxdepth 1 -type f -executable | xargs file | grep ELF | sort | cut -d ':' -f1 | xargs sha256sum >| SHASUM
+# # 1. Find all executable ELF files & create SHASUM
+# find . -maxdepth 1 -type f -executable | xargs file | grep ELF | sort | cut -d ':' -f1 | xargs sha256sum >| $ROOT/SHASUM
 
-# Exclude some files
-cat ./SHASUM | egrep -v 'watchexec|upx|gdu|zellij|starship|entr' >| /tmp/SHASUM.tmp
+# # Copy all files that have changed
+# sha256sum --check $ROOT/SHASUM 2> /dev/null | grep -v 'OK' | cut -d ':' -f1 | xargs -I '{}' bash -c "cp -v {} $ROOT/"
 
-# UPX only changed files
-sha256sum --check /tmp/SHASUM.tmp --quiet 2> /dev/null | cut -d ':' -f 1 | xargs -I '{}' bash -c 'upx --best "{}"'
+# Exclude some files that should never be compressed
+# cat $ROOT/SHASUM | egrep -v 'watchexec|upx|gdu|zellij|starship|entr' >| /tmp/SHASUM.tmp
+
+# sha256sum --check /tmp/SHASUM.tmp 2> /dev/null | grep 'OK' | cut -d ':' -f1 | xargs git checkout
+
+# # UPX only changed files
+# #sha256sum --check /tmp/SHASUM.tmp --quiet 2> /dev/null | cut -d ':' -f 1 | xargs -I '{}' bash -c 'upx --best "{}"'
+
+
