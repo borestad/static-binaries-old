@@ -69,7 +69,7 @@ gron version dev
 ./htmlq: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 htmlq 0.4.0
 
-./hyperfine: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), static-pie linked, stripped
+./hyperfine: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 hyperfine 1.15.0
 
 ./iprange: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
