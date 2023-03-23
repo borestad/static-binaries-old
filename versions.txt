@@ -69,6 +69,9 @@ gron version dev
 ./htmlq: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 htmlq 0.4.0
 
+./hyperfine: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), static-pie linked, stripped
+hyperfine 1.15.0
+
 ./iprange: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 iprange 1.0.4
 
@@ -110,6 +113,9 @@ ripgrep 13.0.0 (rev af6b6c543b)
 
 ./rsync: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 rsync  version 3.2.3  protocol version 31
+
+./run-one: POSIX shell script, ASCII text executable
+flock: failed to execute --version: No such file or directory
 
 ./sd: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 sd 0.7.6
