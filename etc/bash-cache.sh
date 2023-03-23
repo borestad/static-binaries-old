@@ -1,5 +1,7 @@
 #!/bin/bash
 #
+# https://github.com/dimo414/bash-cache ( https://raw.githubusercontent.com/dimo414/bash-cache/master/LICENSE )
+#
 # Bash Cache provides a transparent mechanism for caching long-running Bash
 # functions. See the README.md for full details.
 #
