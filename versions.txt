@@ -42,6 +42,9 @@ dry version 0.11.1, build 175dde05
 ./dust: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 Dust 0.8.5
 
+./eget: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
+eget version 1.3.3
+
 ./entr: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped
 ./entr: unrecognized option: -
 
