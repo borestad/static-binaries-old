@@ -134,6 +134,9 @@ Task version: v3.22.0 (h1:sW+qi054ReRpX7nG8DcKYq3e4IzfSq366RcqEq2lDxc=)
 ./tokei: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), statically linked, no section header
 tokei 12.1.2 compiled with serialization support: json, cbor, yaml
 
+./unar: Bourne-Again shell script, ASCII text executable
+./unar: line 3: ouch: command not found
+
 ./unison: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 Usage: unison [options]
 
