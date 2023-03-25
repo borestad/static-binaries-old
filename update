@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+cd "$(dirname $0)"
+ROOT=$(pwd)
+echo "ROOT: $ROOT"
+
+function ndjson() {
+  gojq -c '. | map(.) | .[]' $1
+}
+
+mkdir -p .tmp && cd .tmp
+
+for row in $(ndjson $ROOT/sources.json); do
+  _jq() {
+     printf ${row} | gojq -r "${1}"
+    }
+
+  hr
+  name=$(_jq '.name')
+  eget_url=$(_jq '.eget_url')
+  eget_args=$(_jq '.eget_args | select (.!=null)')
+  upx=$(_jq '.upx | select (.!=null)')
+
+  if [ -f "$name" ]; then
+      echo "✅ $name exists."
+  else
+      echo "⚠️  $name does not exist."
+      echo "🚀 Downloading $name ..."
+      eget "$eget_url" \
+          --to=$name \
+          -a "$eget_args"  \
+          -a '^sha' \
+          -a '^b3'
+  fi
+
+  echo "upx: $upx"
+  file ./$name | egrep  'dynamically linked|not stripped' || true
+  #strip ./$name
+
+done
