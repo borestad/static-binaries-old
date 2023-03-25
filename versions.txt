@@ -140,6 +140,9 @@ tokei 12.1.2 compiled with serialization support: json, cbor, yaml
 ./unison: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 Usage: unison [options]
 
+./update: Bourne-Again shell script, Unicode text, UTF-8 text executable
+ROOT: /home/runner/work/static-binaries/static-binaries
+
 ./update-static-binaries: Bourne-Again shell script, ASCII text executable
 ROOT: /home/runner/work/static-binaries/static-binaries
 
