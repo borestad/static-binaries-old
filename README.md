@@ -1,11 +1,12 @@
 # static-binaries
 
-__Common static (x64 gnu) binaries & utils used in CI-pipelines__
+**Common static (x64 gnu) binaries & utils used in CI-pipelines**
 
-* Compressed with [UPX](https://github.com/upx/upx) v4 when applicable
-* Prefer musl over gnu
-* Tested in Ubuntu/Debian/Alpine
-* Prefer new version over backward compatibility
+- Stripped
+- Compressed with [UPX](https://github.com/upx/upx) v4 when applicable
+- Prefer musl over gnu
+- Tested in Ubuntu/Debian/Alpine
+- Prefer new version over backward compatibility
 
 **Motivation:**
 
