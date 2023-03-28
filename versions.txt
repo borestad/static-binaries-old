@@ -29,7 +29,7 @@ flag provided but not defined: -version
 curl 7.88.1 (x86_64-pc-linux-musl) libcurl/7.88.1 mbedTLS/2.28.2 zlib/1.2.13 libssh2/1.10.0 nghttp2/1.52.0
 
 ./curlie: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
-curl 7.81.0 (x86_64-pc-linux-gnu) libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.13
+curl 7.81.0 (x86_64-pc-linux-gnu) libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.14
 
 ./dasel: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 dasel version development
@@ -59,6 +59,9 @@ fd 8.7.0
 
 ./gdu: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 Version:	 v5.22.0
+
+./gh: ELF 32-bit LSB executable, Intel 80386, version 1 (GNU/Linux), statically linked, no section header
+gh version 2.25.1 (2023-03-21)
 
 ./gron: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 gron version dev
