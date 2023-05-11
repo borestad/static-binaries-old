@@ -144,10 +144,10 @@ tokei 12.1.2 compiled with serialization support: json, cbor, yaml
 Usage: unison [options]
 
 ./update: Bourne-Again shell script, Unicode text, UTF-8 text executable
-ROOT: /home/runner/work/static-binaries/static-binaries
+ROOT: /home/runner/work/static-binaries-old/static-binaries-old
 
 ./update-static-binaries: Bourne-Again shell script, ASCII text executable
-ROOT: /home/runner/work/static-binaries/static-binaries
+ROOT: /home/runner/work/static-binaries-old/static-binaries-old
 
 ./upx: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, no section header
 upx 4.0.2
